@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderManagementSystem.API",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderManagementSystem.DataAccess", "OrderManagementSystem.DataAccess\OrderManagementSystem.DataAccess.csproj", "{2A18437D-ED20-4FC2-8CFD-F61D52E971C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderManagementSystem.Business", "OrderManagementSystem.Business\OrderManagementSystem.Business.csproj", "{5DAD36B0-9175-4BB1-8662-95CE4ED7F6B7}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderManagementSystem.Entity", "OrderManagementSystem.Entity\OrderManagementSystem.Entity.csproj", "{04E35079-0467-41EE-9D7D-392DF41A1148}"
 EndProject
 Global
@@ -25,10 +23,6 @@ Global
 		{2A18437D-ED20-4FC2-8CFD-F61D52E971C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A18437D-ED20-4FC2-8CFD-F61D52E971C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A18437D-ED20-4FC2-8CFD-F61D52E971C0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5DAD36B0-9175-4BB1-8662-95CE4ED7F6B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5DAD36B0-9175-4BB1-8662-95CE4ED7F6B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5DAD36B0-9175-4BB1-8662-95CE4ED7F6B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5DAD36B0-9175-4BB1-8662-95CE4ED7F6B7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{04E35079-0467-41EE-9D7D-392DF41A1148}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{04E35079-0467-41EE-9D7D-392DF41A1148}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04E35079-0467-41EE-9D7D-392DF41A1148}.Release|Any CPU.ActiveCfg = Release|Any CPU

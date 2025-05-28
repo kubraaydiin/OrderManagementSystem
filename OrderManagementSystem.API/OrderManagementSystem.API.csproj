@@ -12,10 +12,10 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="8.1.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\OrderManagementSystem.Business\OrderManagementSystem.Business.csproj" />
     <ProjectReference Include="..\OrderManagementSystem.DataAccess\OrderManagementSystem.DataAccess.csproj" />
   </ItemGroup>
 

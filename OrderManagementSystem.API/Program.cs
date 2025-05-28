@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using OrderManagementSystem.DataAccess.Context;
+using OrderManagementSystem.DataAccess.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,8 +9,11 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<OrderManagementSystemDbContext>(item => item.UseSqlServer(builder.Configuration.GetConnectionString("OrderManagementSystemDb")));
+
+builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 
 var app = builder.Build();
 
@@ -18,6 +22,9 @@ if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
 }
+
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
 
